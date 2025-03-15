@@ -1,32 +1,49 @@
 
 package br.unifaj.java;
 public class Serie {
-    String titulo;
-    String genero;
-    String protagonista;
-    int anoLancamento;
+    private String titulo;
+    private String genero;
+    private String protagonista;
+    private Integer anoLancamento;
+    private Integer nTemporadas;
 
-    int temporadas;
-
-    public Serie() {
+    public String getTitulo() {
+        return titulo;
     }
 
-    public Serie(String titulo, String genero, String protagonista, int anoLancamento, int temporadas) {
+    public void setTitulo(String titulo) {
         this.titulo = titulo;
-        this.genero = genero;
-        this.protagonista = protagonista;
-        this.anoLancamento = anoLancamento;
-        this.temporadas = temporadas;
     }
 
-    @Override
-    public String toString() {
-        return "Serie{" +
-                "titulo='" + titulo + '\'' +
-                ", genero='" + genero + '\'' +
-                ", protagonista='" + protagonista + '\'' +
-                ", anoLancamento=" + anoLancamento +
-                ", temporadas=" + temporadas +
-                '}';
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getProtagonista() {
+        return protagonista;
+    }
+
+    public void setProtagonista(String protagonista) {
+        this.protagonista = protagonista;
+    }
+
+    public Integer getAnoLancamento() {
+        return anoLancamento;
+    }
+
+    public void setAnoLancamento(Integer anoLancamento) {
+        this.anoLancamento = anoLancamento;
+    }
+
+    public Integer getnTemporadas() {
+        return nTemporadas;
+    }
+
+    public void setnTemporadas(Integer nTemporadas) {
+        this.nTemporadas = nTemporadas;
     }
 }
